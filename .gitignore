@@ -133,3 +133,6 @@ dmypy.json
 *.csv.gz
 
 /data/real-mimic-iii-database/**.csv*
+/data/processed/**.csv*
+
+.DS_Store
