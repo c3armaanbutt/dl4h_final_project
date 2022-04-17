@@ -131,3 +131,5 @@ dmypy.json
 .vscode/
 
 *.csv.gz
+
+/data/real-mimic-iii-database/
