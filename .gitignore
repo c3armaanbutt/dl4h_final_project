@@ -132,4 +132,4 @@ dmypy.json
 
 *.csv.gz
 
-/data/real-mimic-iii-database/
+/data/real-mimic-iii-database/**.csv*
