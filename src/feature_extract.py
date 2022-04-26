@@ -88,4 +88,4 @@ df_noteevents['DRUGS_PRESENT'] = df_noteevents['TEXT'].apply(clean_up_text)
 
 print("Finished labeling....")
 
-df_noteevents.to_csv('C:/Users/harim/OneDrive/Documents/GitHub/dl4h_final_project_1/data/NOTE_EVENTS_WITH_DRUGS.csv', index=False, quoting=csv.QUOTE_ALL, quotechar='"')
+df_noteevents.to_csv('C:/Users/harim/OneDrive/Documents/GitHub/dl4h_final_project_1/data/processed/NOTE_EVENTS_WITH_DRUGS.csv', index=False, quoting=csv.QUOTE_ALL, quotechar='"')
