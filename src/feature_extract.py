@@ -12,7 +12,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 np.random.seed(500)
 
-EVENTS_TO_PROCESS = 100000
+EVENTS_TO_PROCESS = 50000
 
 df_prescriptions = pd.read_csv('C:/Users/harim/OneDrive/Documents/GitHub/dl4h_final_project_1/data/processed/ndc_codes_extracted.csv', dtype=str)
 print("Pres counts:", df_prescriptions.count())
@@ -44,7 +44,6 @@ for index, record in df_prescriptions.iterrows():
 
 print("Unique Durg counts:", len(drug_to_ndc_names))
 
-print(drug_to_ndc_names)
 
 df_noteevents = pd.read_csv('C:/Users/harim/OneDrive/Documents/GitHub/dl4h_final_project_1/data/mimic-iii-clinical-database-demo-14/NOTEEVENTS.csv', dtype=str)
 
@@ -68,23 +67,24 @@ def getAllNDCs(drugs):
 
 process_count = 0
 
-def clean_up_text(text):    
+def clean_up_text(row):
+    text = row['TEXT']
     tokens = word_tokenize(text.lower())
-    temp = [re.sub('[^A-Za-z0-9]+', '', i) for i in tokens if i not in stopset]
+    clean_tokens = [re.sub('[^A-Za-z0-9]+', '', i) for i in tokens if i not in stopset]
     
-    temp = durg_name_set.intersection(temp)
-    codes = getAllNDCs(temp)
-	
+    drugs_ext = durg_name_set.intersection(clean_tokens)
+    codes = getAllNDCs(drugs_ext)
+    
+    cleaned_text = ' '.join(clean_tokens)
+    codes_joined = ''
     if len(codes) > 0:
-        return ','.join(codes)
-    else:
-        return ''
-
+        codes_joined = ','.join(codes)
+    
+    return cleaned_text, codes_joined
 
 print("Finished Normalizing....")
 
-df_noteevents['DRUGS_PRESENT'] = df_noteevents['TEXT'].apply(clean_up_text)
-
+df_noteevents[['CLEAN_TEXT', 'DRUGS_PRESENT']] = df_noteevents.apply(clean_up_text, axis=1, result_type="expand")
 
 print("Finished labeling....")
 
