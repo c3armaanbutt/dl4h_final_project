@@ -45,8 +45,8 @@ Please download the data from `https://physionet.org/content/mimiciii-demo/1.4/`
 
 The jupyter notebooks below shows how we have used Seaborn and Matplotlib to analyze the Precriptions and Noteevents data.
 
-`/src/data_profiling/profile_prescription_data.ipynb`
-`/src/data_profiling/profile_free_text.ipynb`
+1. `/src/data_profiling/profile_prescription_data.ipynb`
+2. `/src/data_profiling/profile_free_text.ipynb`
 
 
 ## Data Pre-Processing Code
