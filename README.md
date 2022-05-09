@@ -13,8 +13,16 @@ Group ID: 213, Paper ID: 283
 
 Download the files below from MIMIC III dataset and copy them to "data" directory under root.
 
-PRESCRIPTIONS.CSV
-PRESCRIPTIONS.CSV
+#### PRESCRIPTIONS.CSV
+#### NOTEEVENTS.CSV
+
+
+## Exploratory Data Analysis(EDA)
+
+The jupyter notebooks below show the code on how we performed data analysis and prescriptions and noteevents csv files.
+
+#### \src\data_profiling\profile_free_text.ipynb
+#### \src\data_profiling\profile_prescription_data.ipynb
 
 
 ## Data Processing
