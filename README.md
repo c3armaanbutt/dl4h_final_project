@@ -36,6 +36,14 @@ Group ID: 213, Paper ID: 283
 
 Please download the data from `https://physionet.org/content/mimiciii-demo/1.4/` and extract the `NOTEEVENTS.csv` and `PRESCRIPTIONS.csv` to `/data/real-mimic-iii-database`.
 
+## Exploratory Data Analysis(EDA)
+
+The jupyter notebooks below shows how we have used Seaborn and Matplotlib to analyze the Precriptions and Noteevents data.
+
+`/src/data_profiling/profile_prescription_data.ipynb`
+`/src/data_profiling/profile_free_text.ipynb`
+
+
 ## Data Pre-Processing Code
 
 Run the following jupyter notebooks in order. It takes approximatey 1 hour to finish the data preprocessing.
