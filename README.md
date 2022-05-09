@@ -17,6 +17,21 @@ Group ID: 213, Paper ID: 283
 
 ### Python Libraries
 
+- Numpy
+- Pandas
+- scikit-learn
+- Pytorch
+- Keras
+- Matplotlib
+- Seaborn
+- Regex
+- NLTK
+- CSV
+- Pickle
+- Pandarallel
+- JSON
+- Statistics
+
 ## Data Download Instructions
 
 Please download the and extract the `NOTEEVENTS.csv` and `PRESCRIPTIONS.csv` to `/data/real-mimic-iii-database`.
