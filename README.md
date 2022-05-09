@@ -34,7 +34,7 @@ Group ID: 213, Paper ID: 283
 
 ## Data Download Instructions
 
-Please download the and extract the `NOTEEVENTS.csv` and `PRESCRIPTIONS.csv` to `/data/real-mimic-iii-database`.
+Please download the data from `https://physionet.org/content/mimiciii-demo/1.4/` and extract the `NOTEEVENTS.csv` and `PRESCRIPTIONS.csv` to `/data/real-mimic-iii-database`.
 
 ## Data Pre-Processing Code
 
