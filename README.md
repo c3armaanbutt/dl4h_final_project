@@ -11,7 +11,22 @@ Group ID: 213, Paper ID: 283
 
 ## Dependencies
 
+Download the files below from MIMIC III dataset and copy them to "data" directory under root.
+
+PRESCRIPTIONS.CSV
+PRESCRIPTIONS.CSV
+
+
 ## Data Processing
+
+After finishing the dependecies step use the notebook below to extract the drug codes from prescriptions data.
+
+\src\data_processing\extract_drug_codes.ipynb
+
+
+The jupyter notebook below reads the Note events and pre-processes the data and write the data to "/data/processed" folder.
+
+\src\data_processing\note_events_processing.ipynb
 
 ## Training Code
 
