@@ -11,37 +11,39 @@ Group ID: 213, Paper ID: 283
 
 ## Dependencies
 
-Download the files below from MIMIC III dataset and copy them to "data" directory under root.
+### Computer Specs
 
-#### PRESCRIPTIONS.CSV
-#### NOTEEVENTS.CSV
+### Runtime
 
+### Python Libraries
 
-## Exploratory Data Analysis(EDA)
+## Data Download Instructions
 
-The jupyter notebooks below show the code on how we performed data analysis and prescriptions and noteevents csv files.
+Please download the and extract the `NOTEEVENTS.csv` and `PRESCRIPTIONS.csv` to `/data/real-mimic-iii-database`.
 
-#### \src\data_profiling\profile_free_text.ipynb
-#### \src\data_profiling\profile_prescription_data.ipynb
+## Data Pre-Processing Code
 
+Run the following jupyter notebooks in order. It takes approximatey 1 hour to finish the data preprocessing.
 
-## Data Processing
+1. `/src/data_processing/extract_drug_codes.ipynb`
+2. `/src/data_processing/note_events_processing.ipynb`
 
-After finishing the dependecies step use the notebook below to extract the drug codes from prescriptions data.
+Once complete it will generate two new files in `/data/processed/`:
 
+- `NOTEEVENTS_ML_DATASET.csv`
+- `ndc_codes_extracted.csv`
 
-#### \src\data_processing\extract_drug_codes.ipynb
+## Train and Evaluate Models Code
 
+To train and evaluate the SVM and GRU Models run the following jupyter notebooks:
 
-The jupyter notebook below reads the Note events and pre-processes the data and write the data to "/data/processed" folder.
+1. `/src/ml/multi_class_svm.ipynb`
+2. `/src/ml/gru_model.ipynb`
 
-####  \src\data_processing\note_events_processing.ipynb
+Results will be persisted in two csvs in the `/data/results` directory.
 
-## Training Code
-
-## Evaluation Code
-
-## Pre-trained Models
+- `GRU_RESULTS.csv`
+- `SVM_results.csv`
 
 ## Results
 
