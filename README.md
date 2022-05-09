@@ -13,7 +13,14 @@ Group ID: 213, Paper ID: 283
 
 ### Computer Specs
 
+You will need a machine with the following specs:
+
+- CPU: 2.9 GHz - 8 Cores
+- Memory: 64 GB
+
 ### Runtime
+
+You will need a machine with `Python 3.9.7` installed.
 
 ### Python Libraries
 
@@ -38,7 +45,7 @@ Please download the data from `https://physionet.org/content/mimiciii-demo/1.4/`
 
 ## Data Pre-Processing Code
 
-Run the following jupyter notebooks in order. It takes approximatey 1 hour to finish the data preprocessing.
+Run the following jupyter notebooks in order. It takes approximately 1 hour to finish the data preprocessing.
 
 1. `/src/data_processing/extract_drug_codes.ipynb`
 2. `/src/data_processing/note_events_processing.ipynb`
