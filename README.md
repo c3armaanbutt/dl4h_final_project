@@ -24,20 +24,18 @@ You will need a machine with `Python 3.9.7` installed.
 
 ### Python Libraries
 
-- Numpy
-- Pandas
-- scikit-learn
-- Pytorch
-- Keras
-- Matplotlib
-- Seaborn
-- Regex
-- NLTK
-- CSV
-- Pickle
-- Pandarallel
-- JSON
-- Statistics
+Please have the following Python libraries installed. We have provided the `requirements.txt` file in the project root for your convenience.
+
+```
+keras==2.8.0
+matplotlib==3.5.1
+nltk==3.7
+numpy==1.22.0
+pandarallel==1.6.1
+pandas==1.4.2
+scikit_learn==1.0.2
+tensorflow==2.8.0
+```
 
 ## Data Download Instructions
 
