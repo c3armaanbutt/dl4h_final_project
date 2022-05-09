@@ -79,6 +79,12 @@ The baseline model SVM model was trained on the top 22 common drugs in our datas
 
 ### GRU - RNN
 
+| Model             | Hidden State Size | Number of Epochs | Mean Training Accuracy (%) | Mean Test Accuracy (%) | Mean Training Loss (%) | Mean Test Loss (%) |
+| ----------------- | ----------------- | ---------------- | -------------------------- | ---------------------- | ---------------------- | ------------------ |
+| Bidirectional GRU | 32                | 3                | 75.44                      | 75.69                  | 56.44                  | 55.49              |
+| Bidirectional GRU | 64                | 3                | 75.45                      | 75.69                  | 56.22                  | 55.52              |
+| Bidirectional GRU | 128               | 3                | 75.44                      | 75.69                  | 56.26                  | 55.66              |
+
 ## References
 
 <a id="1">[1]</a>
