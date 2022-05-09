@@ -21,12 +21,13 @@ PRESCRIPTIONS.CSV
 
 After finishing the dependecies step use the notebook below to extract the drug codes from prescriptions data.
 
-\src\data_processing\extract_drug_codes.ipynb
+
+#### \src\data_processing\extract_drug_codes.ipynb
 
 
 The jupyter notebook below reads the Note events and pre-processes the data and write the data to "/data/processed" folder.
 
-\src\data_processing\note_events_processing.ipynb
+####  \src\data_processing\note_events_processing.ipynb
 
 ## Training Code
 
