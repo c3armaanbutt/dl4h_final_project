@@ -13,24 +13,29 @@ Group ID: 213, Paper ID: 283
 
 ### Computer Specs
 
+You will need a machine with the following specs:
+
+- CPU: 2.9 GHz - 8 Cores
+- Memory: 64 GB
+
 ### Runtime
+
+You will need a machine with `Python 3.9.7` installed.
 
 ### Python Libraries
 
-- Numpy
-- Pandas
-- scikit-learn
-- Pytorch
-- Keras
-- Matplotlib
-- Seaborn
-- Regex
-- NLTK
-- CSV
-- Pickle
-- Pandarallel
-- JSON
-- Statistics
+Please have the following Python libraries installed. We have provided the `requirements.txt` file in the project root for your convenience.
+
+```
+keras==2.8.0
+matplotlib==3.5.1
+nltk==3.7
+numpy==1.22.0
+pandarallel==1.6.1
+pandas==1.4.2
+scikit_learn==1.0.2
+tensorflow==2.8.0
+```
 
 ## Data Download Instructions
 
@@ -46,7 +51,7 @@ The jupyter notebooks below shows how we have used Seaborn and Matplotlib to ana
 
 ## Data Pre-Processing Code
 
-Run the following jupyter notebooks in order. It takes approximatey 1 hour to finish the data preprocessing.
+Run the following jupyter notebooks in order. It takes approximately 1 hour to finish the data preprocessing.
 
 1. `/src/data_processing/extract_drug_codes.ipynb`
 2. `/src/data_processing/note_events_processing.ipynb`
